@@ -78,6 +78,7 @@ body{
     margin: 60px auto;
     position: relative;
 }
+
 .img-fluid{
     border-radius: 14px;
     width: 100%;
@@ -91,14 +92,14 @@ body{
 }
 /* z-index default value of z index is 0  */
 .tint{
-    background-color: rgba(0, 0, 0, 0.554);
-    top: 0;
+    background-color: rgba(111, 0, 0, 0.554);
+    /* top: 0; */
     left: 0;
     right: 0;
     bottom: 0;
     border-radius: 14px;
     position: absolute;
-    top: 0;
+    /* top: 0; */
     z-index: -1;
 }
 
