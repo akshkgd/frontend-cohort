@@ -1,0 +1,14 @@
+$card-border-radius: 14px;
+$input-border-radius:  12px;
+$input-focus-border-color:  gray;
+$input-focus-box-shadow:  0 0 0 3px rgba(128, 128, 128, 0.301);
+$theme-colors: (
+  "primary":    blueviolet,
+  "success":    rgb(0, 157, 55),
+  "danger":     rgb(255, 36, 80),
+  "light":      white,
+  "dark":       black,
+);
+
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss'
