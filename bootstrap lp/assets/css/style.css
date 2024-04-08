@@ -1,0 +1,39 @@
+.login-btn{
+    background-color: #ff4f00 !important;
+    color: white !important;
+    border:1px solid #ff4f00 !important;
+}
+.signup-form{
+    position: absolute;
+    top: 0;
+    width: 360px;
+    background-color: #fff;
+    border-radius: 12px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn-padding{
+    padding: 14px 0 !important;
+    border-radius: 12px;
+}
+.hero-form-left-img{
+    position: absolute;
+    left: -100px;
+    bottom: -16px;
+    height: 330px
+}
+.hero-form-right-img{
+    position: absolute;
+    right: -80px;
+    top: -36px;
+    height: 200px;
+    transform: rotate(20deg);
+}
+.emp-user-img{
+    position: absolute;
+    height: 360px;
+    left: 50%;
+    bottom: -20px;
+    transform: translate(-50%);
+}
