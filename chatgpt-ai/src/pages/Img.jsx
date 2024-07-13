@@ -11,7 +11,7 @@ function Img() {
         setStatus(true)
         let msg = userInput.current.value;
         let apiUrl = 'https://api.openai.com/v1/images/generations';
-        const apiKey = 'sk-proj-aMC06gOW13CITwjbJqfGT3BlbkFJadyG2Yq30ES9EAWE0dtk';
+        const apiKey = '';
         const headers = {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${apiKey}`,
