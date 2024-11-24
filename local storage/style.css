@@ -1,0 +1,12 @@
+#shopping-list{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.shopping-item{
+    width: 260px;
+    
+}
+.shopping-item img{
+    width: 100%;
+}

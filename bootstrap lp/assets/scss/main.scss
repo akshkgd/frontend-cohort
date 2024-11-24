@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+$theme-colors: (
+  "primary":    #0b5b42,
+  "secondary":  #FFF5e7,
+  "warning":    #d8ae52,
+  "light":      white,
+  "dark":       black,
+  "gray":       lightgray,
+);
+$input-padding-y: 14px;
+$input-border-radius:12px;
+$input-font-size: 14px;
+$font-family-sans-serif:"Poppins", sans-serif;
+$modal-content-border-radius:14px;
+$modal-content-border-color: transparent;
+$modal-header-border-color:  transparent;
+@import '../../node_modules/bootstrap/scss/bootstrap.scss'

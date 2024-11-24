@@ -1,0 +1,82 @@
+.modal{
+    width: 440px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.feed{
+    width: 560px;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    padding: 10px;
+    margin: 30px auto;
+    overflow: hidden;
+    position: relative;
+}
+.feed-img{
+    width: 100%;
+    border-radius: 14px;
+}
+
+.profile{
+    display: flex;
+    margin-bottom: 24px;
+    gap: 10px;
+    align-items: center;
+}
+.avatar{
+    height: 50px;
+    border-radius: 50%;
+    width: 50px;
+    object-fit: cover;
+}
+.username{
+    font-size: 14px;
+    color: rgb(79, 79, 79);
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+.icon-flex{
+    display: flex;
+    gap: 16px;
+}
+.icon{
+    font-size: 24px;
+}
+.like{
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .3s;
+    opacity: 0;
+}
+.liked{
+    transform: translate(-50%, -50%) scale(1);
+    animation-name: liked;
+    animation-duration: 1.6s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+    opacity: 100%;
+}
+@keyframes liked{
+    20%{
+        transform: rotate(6deg);
+        /* transform: rotate(360deg) scale(1); */
+    }
+    30%{
+        transform: rotate(-6deg);
+    }
+    90%{
+        top: -200%;
+    }
+    100%{
+        transform: translate(-50%, -50%) scale(0);
+    }
+}

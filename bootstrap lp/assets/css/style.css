@@ -1,0 +1,109 @@
+
+@media(min-width:786px){
+    .login-btn{
+        background-color: #ff4f00 !important;
+        color: white !important;
+        border:1px solid #ff4f00 !important;
+    }
+    .signup-form{
+        position: absolute;
+        top: 0;
+        width: 360px;
+        background-color: #fff;
+        border-radius: 12px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .btn-padding{
+        padding: 14px 0 !important;
+        border-radius: 12px;
+    }
+    .hero-form-left-img{
+        position: absolute;
+        left: -100px;
+        bottom: -16px;
+        height: 330px
+    }
+    .hero-form-right-img{
+        position: absolute;
+        right: -80px;
+        top: -36px;
+        height: 200px;
+        transform: rotate(20deg);
+    }
+    .emp-user-img{
+        position: absolute;
+        height: 360px;
+        left: 50%;
+        bottom: -20px;
+        transform: translate(-50%);
+    }
+    .img-visible-sm{
+        display: none;
+    }
+    .ai-pills{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+}
+
+/* small screens */
+@media(max-width:786px){
+    .ai-pills{
+        /* display: flex;
+        flex-direction: column;
+        gap: 8px; */
+        width: 100%;
+        display: flex;
+        gap: 8px;
+        overflow: auto;
+        margin-bottom: 24px;
+    }
+    .ai-pills::-webkit-scrollbar{
+        display: none;
+    }
+    .login-btn{
+        background-color: #ff4f00 !important;
+        color: white !important;
+        border:1px solid #ff4f00 !important;
+    }
+    .img-visible-sm{
+        display: block;
+        height: 290px;
+        margin: auto;
+    }
+    .signup-form{
+        width: 80vw;
+        margin: auto;
+        background-color: #fff;
+        border-radius: 12px;
+        margin-bottom: 42px;
+        margin-top: 24px;
+    }
+    .text-sm-center{
+        text-align: center;
+    }
+    .btn-padding{
+        padding: 14px 0 !important;
+        border-radius: 12px;
+    }
+    .hero-form-left-img{
+        display: none;
+    }
+    .hero-form-right-img{
+        display: none;
+    }
+    .img-hidden-sm{
+        display: none;
+    }
+    .emp-user-img{
+        position: absolute;
+        height: 250px;
+        left: 50%;
+        bottom: -20px;
+        transform: translate(-50%);
+    }
+}

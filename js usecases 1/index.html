@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+</head>
+<body>
+    <!-- <button onclick="modalToggle()" class="bg-black px-4 py-3 text-md rounded-xl text-white">Open modal</button>
+
+    <div class="modal" id="modal">
+        <div class="modal-body p-3 text-left rounded-xl shadow-xl">
+            <h2 class="font-bold text-2xl mt-4" id="result">Please tell more about yourself.</h2>
+            <div id="form">
+                <p class="text-neutral-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, esse.</p>
+                <input type="text" id="name" placeholder="Enter Name" class="px-4 py-3 border rounded-xl mt-2 w-full focus:outline-none focus:ring-4 focus:ring-orange-100 focus:border-orange-300">
+                <input type="text" id="email" placeholder="Enter Email" class="px-4 py-3 border rounded-xl mt-2 w-full focus:outline-none focus:ring-4 focus:ring-orange-100 focus:border-orange-300">
+                <button class="bg-black text-white px-4 py-3 rounded-xl mt-2" onclick="welcome()">Submit Details</button>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="feed" ondblclick="liked()">
+        <div class="profile">
+            <img src="https://images.unsplash.com/photo-1602233158242-3ba0ac4d2167?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z2lybHxlbnwwfHwwfHx8MA%3D%3D" class="avatar" alt="">
+            <div>
+                <div class="name">Navneet</div>
+                <div class="username">@iamnavneet</div>
+            </div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1606814893907-c2e42943c91f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybHxlbnwwfHwwfHx8MA%3D%3D" class="feed-img" alt="">
+        <img src="heart.svg" id="heart" class="like" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid officiis ab maxime omnis? Libero.</p>
+        <div class="icons">
+                <div class="icon-flex">
+                    <div onclick="liked()"   class="icon"><i id="heart-icon" class="bi bi-heart"></i></div>
+                    <div class="icon"><i class="bi bi-chat-left"></i></div>
+                    <div class="icon"><i class="bi bi-send"></i></div>
+                </div>
+                <div class="icon"><i class="bi bi-bookmark"></i></div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

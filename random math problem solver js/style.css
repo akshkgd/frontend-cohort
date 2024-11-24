@@ -1,0 +1,12 @@
+.sidebar{
+    box-sizing: border-box;
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.container{
+    width: calc(100vw - 400px);
+    height: 100vh;
+}

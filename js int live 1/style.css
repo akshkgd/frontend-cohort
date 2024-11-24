@@ -1,0 +1,15 @@
+.parent{
+    height:500px;
+    width: 700px;
+    margin: 100px auto;
+    background-color: orangered;
+}
+.child{
+    height:180px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(0, 0, 0);
+}

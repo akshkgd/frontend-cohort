@@ -1,0 +1,16 @@
+1. What is the Box model in CSS? Which CSS properties are a part of it?
+2. How to include CSS in the webpage?
+3. What are the different types of Selectors in CSS?
+4. What is VH/VW (viewport height/ viewport width) in CSS?
+5. Difference between reset vs normalize CSS?. How do they differ?
+6. What is the difference between inline, inline-block, and block?
+7. Does margin-top or margin-bottom have an effect on inline elements?
+8. What is a z-index, how does it function?
+9. how the css is applied in html?
+10. When does DOM reflow occur?
+11. How does Calc work?
+12. How to decide when to choose css / libraries
+13. What does !important mean in CSS?
+14. What is specificity? How to calculate specificity?
+15. How to hide an element in css?
+

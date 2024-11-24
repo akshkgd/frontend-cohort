@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/output.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+</head>
+<body>
+    <div class="bg-blue-600 text-white text-center py-3 font-light">If you've got tasks, start managing today!</div>
+
+    <div class="w-[360px] mx-auto mt-16">
+        
+        <h1 class="text-xl text-black font-bold">Manage your task <span class="text-neutral-500">@ashish</span></h1>
+        <p class="text-neutral-600">Add your tasks and start organizing them quickly.</p>
+    </div>
+
+    <div class="w-[360px] mx-auto mt-5 hidden">
+        <div class="flex gap-2">
+            <input class="w-[87%] p-3 rounded-lg border mb-2 focus:outline-none focus:ring-4 focus:ring-blue-100 focus:border-blue-600" type="text" placeholder="e.g. Learn Javascript">
+            <input class="w-[13%] p-3 rounded-lg border mb-2 focus:outline-none focus:ring-4 focus:ring-blue-100 focus:border-blue-600" type="datetime-local" placeholder="e.g. Learn Javascript">
+        </div>
+        
+        <button class="bg-black rounded-lg text-white px-5 py-3 text-sm font-light">Add Task</button>
+    </div>
+
+    <div class="w-[360px] mx-auto mt-5">
+        <div class="border border-neutral-200 bg-neutral-0 mb-3  rounded-xl p-3">    
+            <p>Learn tailwing media queries</p>   
+            <p class=" text-[14px] font-light  text-neutral-700">Lorem ipsum dolor sit amet adipisicing elit.</p>
+            <div class="flex gap-4 ">
+                <button class="text-neutral-400 hover:text-green-600 flex gap-3 font-light mt-2 text-sm items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg> Mark as done</button>
+                <button class="text-neutral-400 hover:text-red-500 flex gap-3 font-light mt-2 text-sm items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                    <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                  </svg> Delete</button>
+            </div>
+         </div>
+    </div>
+
+    <button class="fixed bottom-10 right-10 bg-black text-white w-12 flex rounded-full items-center justify-center h-12"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+      </svg></button>
+
+      <div x-data="{ modalOpen: false }"
+    @keydown.escape.window="modalOpen = false"
+    class="relative z-50 w-auto h-auto">
+    <button @click="modalOpen=true" class="fixed bottom-10 right-10 bg-black text-white w-12 flex rounded-full items-center justify-center h-12"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+      </svg></button>
+    <!-- <button  class="inline-flex items-center justify-center h-10 px-4 py-2 text-sm font-medium transition-colors bg-white border rounded-md hover:bg-neutral-100 active:bg-white focus:bg-white focus:outline-none focus:ring-2 focus:ring-neutral-200/60 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none">Open</button> -->
+    <template x-teleport="body">
+        <div x-show="modalOpen" class="fixed top-0 left-0 z-[99] flex items-center justify-center w-screen h-screen" x-cloak>
+            <div x-show="modalOpen" 
+                x-transition:enter="ease-out duration-100"
+                x-transition:enter-start="opacity-0"
+                x-transition:enter-end="opacity-100"
+                x-transition:leave="ease-in duration-100"
+                x-transition:leave-start="opacity-100"
+                x-transition:leave-end="opacity-0"
+                @click="modalOpen=false" class="absolute inset-0 w-full h-full bg-black bg-opacity-40"></div>
+            <div x-show="modalOpen"
+                x-trap.inert.noscroll="modalOpen"
+                x-transition:enter="ease-out duration-300"
+                x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
+                x-transition:leave="ease-in duration-200"
+                x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
+                x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                class="relative w-full py-3 bg-white px-3 sm:w-[480px] sm:rounded-lg">
+                
+                <div class="relative w-auto">
+                    <div class="">
+                        <input  class="text-xl w-full rounded-lg focus:outline-none" type="text" placeholder="Task name">
+                        <input class="text-sm text-neutral-600 w-full rounded-lg mb-2 focus:outline-none" type="text" placeholder="Description">
+
+                        <!-- <input class="w-[13%] p-3 rounded-lg border mb-2 focus:outline-none focus:ring-4 focus:ring-blue-100 focus:border-blue-600" type="datetime-local" placeholder="e.g. Learn Javascript"> -->
+                    </div>
+                    <div class="flex gap-2 justify-end">
+                        <button @click="modalOpen=false" class="bg-neutral-200  rounded-lg mt-3 text-black px-4 py-2 text-sm font-light">Cancel</button>              
+                        <button class="bg-black  rounded-lg mt-3 text-white px-4 py-2 text-sm font-light">Add Task</button>              
+                    </div>
+            </div>
+        </div>
+    </template>
+</div>
+</body>
+</html>

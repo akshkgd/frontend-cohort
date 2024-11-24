@@ -1,0 +1,147 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-color: red; */
+}
+.img{
+    background-color: red;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.bg{
+    height: 480px;
+    width: 900px;
+    margin: auto;
+    background-image: url('https://source.unsplash.com/1600x1000/?bedroom');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.filter{
+    
+    height: 290px;
+    filter:brightness(120%) contrast(90%) hue-rotate(-6deg) blur(3px);
+}
+
+.demo{
+    /* margin: 60px auto; */
+    width: 300px;
+    padding: 10px;
+    border-radius: 14px;
+    background-color: blueviolet;
+    color: white;
+    /* transform: scale(.); */
+    /* transform: rotate(-6deg); */
+    /* transform: skew(30deg); */
+    transform: translate(50px, 50px);
+    /* margin: 50px; */
+}
+
+.demo1{
+    /* margin: 60px auto; */
+    width: 300px;
+    padding: 10px;
+    border-radius: 14px;
+    background-color: orangered;
+    color: white;
+    /* transform: scale(.); */
+    /* transform: rotate(-6deg); */
+    /* transform: skew(30deg); */
+}
+
+
+
+/* pseudo elements
+    ::first-line
+    ::first-letter
+    ::selection
+    ::before
+    ::after
+*/
+h1::first-line{
+    color: red;
+}
+h1::first-letter{
+    /* font-size: 70px; */
+    color: blue;
+}
+::selection{
+    background-color: blueviolet;
+    color: white;
+}
+
+/* pseudo classes
+    hover
+    focus
+    active
+    first-child
+    last-child
+    nth-child
+    
+*/
+/* .filter:hover{
+    filter: blur(0);
+    cursor: pointer;
+    width: 500px;
+    object-fit: cover;
+} */
+h1:hover{
+    color: rgb(137, 0, 137);
+}
+
+input{
+    width: 300px;
+    padding: 16px ;
+    font-size: 16px;
+    border:1px solid lightgray;
+    border-radius: 12px;
+}
+input:focus{
+    outline:none;
+    border:1px solid rgb(246, 0, 66);
+}
+button:active{
+    background-color: red;
+}
+p:first-child{
+    color: red;
+}
+p:last-child{
+    color: green !important;
+}   
+
+p:nth-child(3n){
+    color: blue;
+}
+
+
+
+
+.test{
+    /* background-color: green; */
+}
+div{
+    width: 400px;
+    position: relative;
+}
+/* .test::before{
+    
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+} */
+.test::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
